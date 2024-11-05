@@ -517,34 +517,52 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
 #about .col-left {
 	width: 250px;
 	height: 360px;
 }
+
 #about .col-right {
 	width: 100%;
+	text-align: left;
+	padding: 30px;
 }
+
 #about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
-	margin-bottom: 10px;
+	margin-bottom: 20px; /* Added space between title and text */
+	text-align: center;
 }
+
 #about .col-right p {
+	font-size: 1.4rem; /* Ensure text size is consistent with other content */
+	margin-top: 20px; /* Added space above paragraph text */
 	margin-bottom: 20px;
+	color: #555; /* Softer color for readability */
+	line-height: 2rem; /* Set line-height for readability */
+	text-align: center;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 #about .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
+
 #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
@@ -1761,7 +1779,7 @@ p {
 	color: white;
 	border-radius: 5px;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	transition: background-color 0.3s ease;
   }
   
@@ -1783,8 +1801,8 @@ p {
 	}
   
 	.webinar-photo img {
-	  width: 100px;
-	  height: 100px;
+	  width: 150px;
+	  height: 150px;
 	}
   }
   
