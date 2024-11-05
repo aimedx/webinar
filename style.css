@@ -138,13 +138,13 @@ a {
   font-weight: 500;
   color: #1f204e;
   letter-spacing: 0.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #about .col-right p {
   font-size: 1.4rem;
   color: #555;
-  margin-bottom: 20px;
+  margin-top: 10px;
   line-height: 2rem;
 }
 
@@ -174,13 +174,13 @@ a {
   font-weight: 500;
   color: #1f204e;
   letter-spacing: 0.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #contact .contact-info p {
   font-size: 1.4rem;
   color: #555;
-  margin-bottom: 20px;
+  margin-top: 10px;
   line-height: 2rem;
 }
 
