@@ -82,7 +82,7 @@ a {
 }
 
 #header .nav-list ul li:hover a {
-  color: rgb(20, 157, 220) !important;
+  color: white !important; /* Ensures color is always white */
 }
 
 /* Hero Section */
