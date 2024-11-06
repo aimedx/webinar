@@ -96,7 +96,7 @@ a {
 
 #hero h1 {
   font-size: 2.8rem;
-  color: #1f204e;
+  color: white !important; /* Ensures color is always white */
   text-align: center;
   font-weight: 300;
 }
