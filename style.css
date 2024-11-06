@@ -75,14 +75,14 @@ a {
 
 #header .nav-list ul li a {
   font-size: 1.8rem;
-  color: white;
+  color: white !important; /* Ensures color is always white */
   padding: 20px;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
 
 #header .nav-list ul li:hover a {
-  color: rgb(20, 157, 220);
+  color: rgb(20, 157, 220) !important;
 }
 
 /* Hero Section */
