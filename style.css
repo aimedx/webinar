@@ -51,7 +51,7 @@ a {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  max-width: 1100px; /* Fix the right alignment issue */
+  max-width: 1100px;
   background-color: #29323c;
   padding: 10px 0;
   margin: 0 auto;
@@ -90,14 +90,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 40px 20px; /* Reduced height */
   background-color: #29323c;
-  max-width: 1100px; /* Align the banner box */
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 #hero h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: #ffffff;
   font-weight: 400;
   text-align: center;
@@ -105,7 +105,7 @@ a {
 
 /* Intro Section */
 #intro {
-  padding: 100px 20px 20px 20px;
+  padding: 100px 20px 20px 20px; /* Increased top padding */
 }
 
 .intro-content {
@@ -166,7 +166,7 @@ a {
 .webinar-block {
   display: flex;
   align-items: center;
-  max-width: 900px; /* Make the box longer */
+  max-width: 900px;
   padding: 15px;
   background-color: #f4f7fa;
   border-radius: 8px;
@@ -177,7 +177,7 @@ a {
   flex: 0 0 auto;
   width: 140px;
   height: 140px;
-  border-radius: 50%; /* Make the photo circular */
+  border-radius: 50%; /* Circular photo */
   overflow: hidden;
   margin-right: 15px;
 }
@@ -190,7 +190,7 @@ a {
 
 .webinar-details {
   flex: 1;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .webinar-details h2 {
@@ -237,13 +237,13 @@ a {
   text-align: center;
 }
 
-#contact a {
-  font-size: 1.8rem;
+#contact p a {
   color: #3576c1;
   font-weight: bold;
+  text-decoration: none;
 }
 
-#contact a:hover {
+#contact p a:hover {
   text-decoration: underline;
 }
 
@@ -284,7 +284,7 @@ a {
     line-height: 2.2rem;
   }
 
-  #contact a {
+  #contact p a {
     font-size: 1.6rem;
   }
 }
