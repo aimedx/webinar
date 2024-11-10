@@ -105,7 +105,7 @@ a {
 
 /* Intro Section */
 #intro {
-  padding: 100px 20px 20px 20px; /* Increased top padding */
+  padding-top: 100px; /* Increase this value as needed */
 }
 
 .intro-content {
