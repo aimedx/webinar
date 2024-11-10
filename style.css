@@ -105,7 +105,7 @@ a {
 
 /* Intro Section */
 #intro {
-  padding-top: 100px; /* Increase this value as needed */
+  padding-top: 120px; /* Increase this value as needed */
 }
 
 .intro-content {
@@ -166,11 +166,12 @@ a {
 .webinar-block {
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 15px;
+  width: 90%; /* Increase width to occupy more space */
+  max-width: 1200px; /* Increased max-width for wider layout */
   background-color: #f4f7fa;
+  padding: 15px; /* Reduced padding for less internal space */
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .webinar-photo {
