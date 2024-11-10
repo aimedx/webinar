@@ -26,81 +26,36 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
+/* Introduction Section */
+#intro {
+  padding: 80px 20px 40px;
+}
+
+.intro-content {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.section-title {
-  font-size: 4rem;
-  font-weight: 400;
-  color: #1f204e;
-  margin-bottom: 25px;
-  text-align: center;
-  letter-spacing: 0.2rem;
-}
-
-.section-title span {
-  color: rgb(20, 157, 220);
-}
-
-/* Header Section */
-#header {
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  background-color: #29323c;
-  padding: 10px 0;
-}
-
-#header .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
+  gap: 20px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-#header .nav-list ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.intro-logo img {
+  width: 100%;
+  height: auto;
 }
 
-#header .nav-list ul li a {
-  font-size: 2rem;
-  color: white;
-  padding: 15px;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-}
-
-#header .nav-list ul li:hover a {
-  color: rgb(20, 157, 220);
-}
-
-/* Hero Section */
-#hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
-  background-color: #29323c;
-}
-
-#hero h1 {
-  font-size: 3.5rem;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 400;
+.intro-text h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #3576c1;
 }
 
 /* About Section */
 #about {
   padding: 60px 20px;
   background-color: #ffffff;
+  border-top: 2px solid #e0e0e0; /* Separate the About section */
 }
 
 #about .about {
@@ -119,18 +74,22 @@ a {
 }
 
 #about p {
-  font-size: 2rem; /* Reduced font size for better readability */
+  font-size: 1.6rem; /* Reduced font size for better readability */
   color: #333;
   margin-top: 15px;
-  line-height: 2.8rem; /* Adjusted line height */
+  line-height: 2.4rem; /* Adjusted line height */
   text-align: center;
-  max-width: 900px;
 }
 
 /* Webinars Section */
 #webinars {
   padding: 60px 20px;
   background-color: #f4f4f4;
+}
+
+.webinars-content {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .webinar-list {
@@ -159,12 +118,12 @@ a {
 }
 
 .webinar-details h2 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   color: #333;
 }
 
 .webinar-details p {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #666;
 }
 
@@ -174,53 +133,14 @@ a {
   background-color: #3576c1;
   color: white;
   border-radius: 5px;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .sign-up-button a:hover {
   background-color: #09223b;
 }
 
-/* Contact Section */
-#contact {
-  padding: 60px 20px;
-  background-color: #ffffff;
-}
-
-#contact .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-#contact h1 {
-  font-size: 3.5rem;
-  font-weight: 500;
-  color: #1f204e;
-  margin-bottom: 20px;
-}
-
-#contact p {
-  font-size: 2.6rem;
-  color: #333;
-  line-height: 3.2rem;
-  text-align: center;
-}
-
-#contact a {
-  font-size: 2.6rem;
-  color: #3576c1;
-  font-weight: bold;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
+/* Footer Section */
 #footer {
   background-color: #29323c;
   color: white;
@@ -258,11 +178,11 @@ a {
 
   #about p,
   #contact p {
-    font-size: 2.2rem;
-    line-height: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 
   #contact a {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
