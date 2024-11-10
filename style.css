@@ -73,7 +73,7 @@ a {
 
 #header .nav-list ul li a {
   font-size: 2rem;
-  color: white;
+  color: white !important; /* Ensures the text color is white */
   padding: 15px;
   text-transform: uppercase;
   transition: color 0.3s ease;
@@ -109,38 +109,23 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#about .col-left {
-  width: 250px;
-  height: 360px;
-  margin-bottom: 20px;
-}
-
-#about .col-left .about-img {
-  height: 100%;
-  width: 100%;
-  border: 10px solid white;
-}
-
-#about .col-right {
   max-width: 800px;
-  text-align: center;
-  padding: 30px;
+  margin: 0 auto;
 }
 
-#about .col-right h2 {
-  font-size: 2.8rem;
+#about h1 {
+  font-size: 3.5rem;
   font-weight: 500;
   color: #1f204e;
   margin-bottom: 20px;
 }
 
-#about .col-right p {
-  font-size: 2.6rem;
+#about p {
+  font-size: 2.8rem; /* Increased font size for readability */
   color: #333;
   margin-top: 15px;
-  line-height: 3.2rem;
+  line-height: 3.4rem; /* Improved line height */
+  text-align: center;
 }
 
 /* Contact Section */
@@ -158,24 +143,23 @@ a {
   padding: 20px;
 }
 
-#contact .section-title {
-  font-size: 3rem;
+#contact h1 {
+  font-size: 3.5rem;
   font-weight: 500;
   color: #1f204e;
-  letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
 
 #contact p {
-  font-size: 2rem; /* Increased font size */
+  font-size: 2.6rem; /* Increased font size for better readability */
   color: #333;
   margin-top: 15px;
-  line-height: 2.5rem;
+  line-height: 3.2rem;
   text-align: center;
 }
 
 #contact a {
-  font-size: 2rem; /* Increased font size for the email link */
+  font-size: 2.6rem; /* Increased font size for the email link */
   color: #3576c1;
   text-decoration: none;
   font-weight: bold;
@@ -217,12 +201,12 @@ a {
 }
 
 .webinar-details h2 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: #333;
 }
 
 .webinar-details p {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   color: #666;
 }
 
@@ -237,6 +221,18 @@ a {
 
 .sign-up-button a:hover {
   background-color: #09223b;
+}
+
+/* Footer */
+#footer {
+  background-color: #29323c;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer p {
+  font-size: 2.4rem;
 }
 
 /* Responsive Design */
@@ -263,26 +259,9 @@ a {
     font-size: 3.5rem;
   }
 
-  #about .col-right p,
-  #contact .contact-info p {
+  #about p,
+  #contact p {
     font-size: 2.4rem;
     line-height: 3rem;
   }
-}
-
-/* Footer */
-#footer {
-  background-color: #29323c;
-  color: white;
-  text-align: center;
-  padding: 30px 0;
-}
-
-#footer h2 {
-  font-size: 2.4rem;
-  margin-bottom: 15px;
-}
-
-#footer p {
-  font-size: 1.4rem;
 }
