@@ -185,6 +185,7 @@ a {
 #contact {
   padding: 60px 20px;
   background-color: #ffffff;
+  border-top: 2px solid #e0e0e0; /* Add a border to separate it from previous sections */
 }
 
 #contact .contact {
@@ -203,17 +204,19 @@ a {
   margin-bottom: 20px;
 }
 
-#contact p {
-  font-size: 2.6rem;
-  color: #333;
-  line-height: 3.2rem;
+#contact .contact-info {
   text-align: center;
+  font-size: 2rem; /* Reduced font size for better readability */
+  color: #333;
+  line-height: 2.8rem;
+  margin-top: 15px;
 }
 
 #contact a {
-  font-size: 2.6rem;
+  font-size: 2.2rem; /* Consistent font size for the email link */
   color: #3576c1;
   font-weight: bold;
+  text-decoration: none;
 }
 
 #contact a:hover {
