@@ -112,16 +112,17 @@ a {
 }
 
 #about h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
   color: #1f204e;
   margin-bottom: 20px;
 }
 
 #about p {
-  font-size: 2.6rem;
+  font-size: 2rem; /* Reduced font size for better readability */
   color: #333;
-  line-height: 3.2rem;
+  margin-top: 15px;
+  line-height: 2.8rem; /* Adjusted line height */
   text-align: center;
   max-width: 900px;
 }
