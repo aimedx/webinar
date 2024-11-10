@@ -14,11 +14,11 @@ html {
 
 body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -34,13 +34,12 @@ a {
 }
 
 .section-title {
-  font-size: 3.5rem;
-  font-weight: 300;
+  font-size: 4rem;
+  font-weight: 400;
   color: #1f204e;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
   letter-spacing: 0.2rem;
-  text-transform: uppercase;
 }
 
 .section-title span {
@@ -63,8 +62,8 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1300px;
-  padding: 0 10px;
+  max-width: 1100px;
+  padding: 0 20px;
 }
 
 #header .nav-list ul {
@@ -74,15 +73,15 @@ a {
 }
 
 #header .nav-list ul li a {
-  font-size: 1.8rem;
-  color: white !important; /* Ensures color is always white */
-  padding: 20px;
+  font-size: 2rem;
+  color: white;
+  padding: 15px;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
 
 #header .nav-list ul li:hover a {
-  color: white !important; /* Ensures color is always white */
+  color: rgb(20, 157, 220);
 }
 
 /* Hero Section */
@@ -90,20 +89,20 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
-  background-color: #ffffff;
+  padding: 60px 20px;
+  background-color: #29323c;
 }
 
 #hero h1 {
-  font-size: 2.8rem;
-  color: white !important; /* Ensures color is always white */
+  font-size: 3.2rem;
+  color: white;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* About Section */
 #about {
-  padding: 40px 0;
+  padding: 60px 20px;
   background-color: #f4f4f4;
 }
 
@@ -111,8 +110,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 #about .col-left {
@@ -124,35 +121,32 @@ a {
 #about .col-left .about-img {
   height: 100%;
   width: 100%;
-  position: relative;
   border: 10px solid white;
 }
 
 #about .col-right {
-  width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
   padding: 30px;
 }
 
 #about .col-right h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #1f204e;
-  letter-spacing: 0.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #about .col-right p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #333;
-  margin-top: 10px;
-  line-height: 2.2rem;
+  margin-top: 15px;
+  line-height: 2.5rem;
 }
 
 /* Contact Section */
 #contact {
-  padding: 40px 0;
+  padding: 60px 20px;
   background-color: #ffffff;
 }
 
@@ -160,37 +154,31 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 #contact .contact-info {
-  width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
+  padding: 20px;
 }
 
 #contact .contact-info h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #1f204e;
-  letter-spacing: 0.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #contact .contact-info p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #333;
-  margin-top: 10px;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
 }
 
 /* Webinars Section */
 #webinars {
-  padding: 20px 0;
+  padding: 40px 20px;
   background-color: #f4f4f4;
-  text-align: center;
 }
 
 .webinar-list {
@@ -198,87 +186,77 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 20px;
 }
 
 .webinar-block {
   display: flex;
   align-items: center;
-  width: 100%;
   max-width: 800px;
   background-color: #f4f7fa;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.webinar-block:hover {
-  transform: translateY(-5px);
 }
 
 .webinar-photo img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
 }
 
 .webinar-details h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #333;
-  margin-bottom: 10px;
 }
 
 .webinar-details p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #666;
 }
 
 .sign-up-button a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background-color: #3576c1;
   color: white;
   border-radius: 5px;
-  text-align: center;
-  font-size: 1.8rem;
-  transition: background-color 0.3s ease;
+  font-size: 2rem;
 }
 
 .sign-up-button a:hover {
   background-color: #09223b;
-  text-decoration: none;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .webinar-block {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .webinar-photo {
-    margin-bottom: 15px;
-  }
-
   .webinar-photo img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
 
   #header .nav-list ul li a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   #hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
 
   .section-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+
+  #about .col-right p,
+  #contact .contact-info p {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
   }
 }
 
@@ -287,16 +265,14 @@ a {
   background-color: #29323c;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 #footer h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 #footer p {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
