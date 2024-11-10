@@ -28,16 +28,17 @@ a {
 
 .container {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
+/* Section Titles */
 .section-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
   color: #1f204e;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
   letter-spacing: 0.2rem;
 }
@@ -52,7 +53,7 @@ a {
   z-index: 1000;
   width: 100%;
   background-color: #29323c;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
 #header .nav-bar {
@@ -63,21 +64,16 @@ a {
   margin: 0 auto;
 }
 
-#header .brand h1 {
-  font-size: 2.5rem;
-  color: white;
-}
-
 #header .nav-list ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
 }
 
 #header .nav-list ul li a {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
-  padding: 10px;
+  padding: 15px;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
@@ -86,32 +82,71 @@ a {
   color: rgb(20, 157, 220);
 }
 
-/* Webinars Section */
-#webinars {
-  padding: 80px 20px;
-  background-color: #f4f4f4;
+/* Hero Section */
+#hero {
+  display: block;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #29323c;
 }
 
-.webinars-content {
-  max-width: 900px;
+#hero h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* About Section */
+#about {
+  display: block;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #1f204e;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 15px;
+  line-height: 2.6rem;
+  max-width: 800px;
   margin: 0 auto;
 }
 
+/* Webinars Section */
+#webinars {
+  display: block;
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#webinars h1 {
+  font-size: 3.5rem;
+  color: #1f204e;
+  margin-bottom: 20px;
+}
+
 .webinar-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .webinar-block {
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  background-color: #ffffff;
+  display: block;
+  margin-bottom: 30px;
   padding: 20px;
+  background-color: #f4f7fa;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .webinar-photo img {
@@ -119,17 +154,20 @@ a {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 20px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
 .webinar-details h2 {
   font-size: 2.6rem;
   color: #333;
+  text-align: center;
 }
 
 .webinar-details p {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #666;
+  text-align: center;
 }
 
 .sign-up-button a {
@@ -138,11 +176,44 @@ a {
   background-color: #3576c1;
   color: white;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  text-align: center;
 }
 
 .sign-up-button a:hover {
   background-color: #09223b;
+}
+
+/* Contact Section */
+#contact {
+  display: block;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #1f204e;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 2.6rem;
+}
+
+#contact a {
+  font-size: 1.8rem;
+  color: #3576c1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -150,7 +221,7 @@ a {
   background-color: #29323c;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 #footer p {
@@ -159,25 +230,29 @@ a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .webinar-block {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .webinar-photo img {
-    width: 160px;
-    height: 160px;
-  }
-
-  #header .nav-list ul li a {
-    font-size: 1.6rem;
+  #hero h1 {
+    font-size: 3rem;
   }
 
   .section-title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
-  .sign-up-button a {
+  #about p,
+  #contact p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  #contact a {
+    font-size: 1.6rem;
+  }
+
+  .webinar-details h2 {
+    font-size: 2.4rem;
+  }
+
+  .webinar-details p {
     font-size: 1.8rem;
   }
 }
