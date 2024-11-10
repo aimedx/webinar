@@ -90,8 +90,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
   background-color: #29323c;
+  max-width: 100%;
 }
 
 #hero h1 {
@@ -101,14 +102,45 @@ a {
   text-align: center;
 }
 
+/* Intro Section */
+#intro {
+  padding: 100px 20px 20px 20px; /* Increased top padding for more space */
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro-logo {
+  flex: 0 0 auto;
+  width: 150px;
+}
+
+.intro-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: center;
+}
+
+.intro-text h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #3576c1;
+}
+
 /* About Section */
 #about {
   padding: 40px 20px;
   background-color: #ffffff;
-}
-
-#about .about {
-  text-align: center;
 }
 
 #about h1 {
@@ -121,7 +153,7 @@ a {
   font-size: 1.8rem;
   color: #333;
   line-height: 2.4rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -156,14 +188,15 @@ a {
 
 .webinar-photo {
   flex: 0 0 auto;
-  width: 120px;
+  width: 140px;
+  height: 140px; /* Ensuring square photo */
   margin-right: 15px;
 }
 
 .webinar-photo img {
   width: 100%;
-  height: auto;
-  border-radius: 50%;
+  height: 100%;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -242,16 +275,11 @@ a {
 @media (max-width: 768px) {
   .webinar-block {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
   .webinar-photo {
     margin-bottom: 10px;
-  }
-
-  .webinar-details {
-    text-align: center;
   }
 
   #hero h1 {
