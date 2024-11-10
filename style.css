@@ -145,7 +145,7 @@ a {
 
 /* Contact Section */
 #contact {
-  padding: 60px 20px;
+  padding: 40px 0;
   background-color: #ffffff;
 }
 
@@ -153,31 +153,36 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#contact .contact-info {
   max-width: 800px;
-  text-align: center;
+  margin: 0 auto;
   padding: 20px;
 }
 
-#contact .contact-info h2 {
-  font-size: 2.8rem;
+#contact .section-title {
+  font-size: 3rem;
   font-weight: 500;
   color: #1f204e;
+  letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
 
-#contact .contact-info p {
-  font-size: 2.6rem;
+#contact p {
+  font-size: 2rem; /* Increased font size */
   color: #333;
-  line-height: 3.2rem;
+  margin-top: 15px;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
 #contact a {
-  font-size: 2.6rem;
+  font-size: 2rem; /* Increased font size for the email link */
   color: #3576c1;
+  text-decoration: none;
   font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 /* Webinars Section */
