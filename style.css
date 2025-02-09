@@ -1,0 +1,291 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap';
+
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #1f204e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-title span {
+  color: rgb(20, 157, 220);
+}
+
+/* Header Section */
+#header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  max-width: 1100px;
+  background-color: #29323c;
+  padding: 1px 0;
+  margin: 0 auto;
+}
+
+#header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .nav-list ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#header .nav-list ul li {
+  margin: 0 15px;
+}
+
+#header .nav-list ul li a {
+  font-size: 1.8rem;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+#header .nav-list ul li:hover a {
+  color: rgb(20, 157, 220);
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px; /* Reduced height */
+  background-color: #29323c;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Intro Section */
+#intro {
+  padding-top: 120px; /* Increase this value as needed */
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.intro-logo {
+  flex: 0 0 auto;
+  width: 150px;
+}
+
+.intro-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-text h2 {
+  font-size: 3rem;
+  color: #3576c1;
+  text-align: center;
+}
+
+/* About Section */
+#about {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+#about h1 {
+  font-size: 3.5rem;
+  color: #1f204e;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+/* Webinars Section */
+#webinars {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.webinar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.webinar-block {
+  display: flex;
+  align-items: center;
+  width: 90%; /* Increase width to occupy more space */
+  max-width: 1200px; /* Increased max-width for wider layout */
+  background-color: #f4f7fa;
+  padding: 15px; /* Reduced padding for less internal space */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.webinar-photo {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; /* Circular photo */
+  overflow: hidden;
+  margin-right: 35px;
+}
+
+.webinar-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webinar-details {
+  flex: 1;
+  text-align: left;
+}
+
+.webinar-details h2 {
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.webinar-details p {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.sign-up-button a {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #3576c1;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+
+.sign-up-button a:hover {
+  background-color: #09223b;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+#contact h1 {
+  font-size: 3.5rem;
+  color: #1f204e;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+#contact p a {
+  color: #3576c1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+#footer {
+  background-color: #29323c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer p {
+  font-size: 1.6rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .webinar-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .webinar-photo {
+    margin-bottom: 10px;
+  }
+
+  #hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  #about p,
+  #contact p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  #contact p a {
+    font-size: 1.6rem;
+  }
+}
